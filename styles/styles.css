@@ -1,11 +1,18 @@
+:root {
+    --primary-color: #333;
+    --spacing: 1rem;
+    --text-light: white;
+    --background-light: #eee;
+}
+
 nav {
-    background-color: #333;
-    padding: 1rem;
+    background-color: var(--primary-color);
+    padding: var(--spacing);
 }
 
 nav a {
-    color: white;
-    padding: 1rem;
+    color: var(--text-light);
+    padding: var(--spacing);
     display: block;
 }
 
@@ -14,24 +21,24 @@ main {
 }
 
 h1 {
-    color: #333;
+    color: var(--primary-color);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #333;
+    border: 1px solid var(--primary-color);
     padding: 5px;
     box-shadow: 0 0 10px #999;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
+    margin: var(--spacing);
     border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    padding: var(--spacing);
+    background-color: var(--background-light);
+    color: var(--primary-color);
     text-align: center;
 }
 

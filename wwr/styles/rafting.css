@@ -101,3 +101,11 @@ header nav {
 section {
     text-align: center;
 }
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--accent2-color);
+}

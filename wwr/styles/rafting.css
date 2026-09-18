@@ -80,3 +80,24 @@ article {
     width: 125px;
     margin-left: 16px;
 }
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section {
+    text-align: center;
+}

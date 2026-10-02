@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #1b4965;
+    --primary-color: #173f59;
     --secondary-color: #62b6cb;
     --accent1-color: #264653;
     --accent2-color: #5fa8d3;
@@ -43,6 +43,10 @@ article {
     text-decoration: none;
 }
 
+nav a {
+    color: var(--primary-color);
+}
+
 .hero {
     position: relative;
 }
@@ -59,7 +63,7 @@ article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 1;
     background-color: var(--primary-color);
     color: #fff;
 }
@@ -118,12 +122,6 @@ footer {
     background-color: var(--accent2-color);
 }
 
-.socialmedia {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-}
-
 .history {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
@@ -173,4 +171,8 @@ footer {
 .adventure-gallery figcaption {
     margin-top: 5px;
     font-weight: bold;
+}
+
+footer p {
+    color: #000000;
 }

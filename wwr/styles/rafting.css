@@ -1,4 +1,4 @@
-:root {
+css:root {
     --primary-color: #173f59;
     --secondary-color: #62b6cb;
     --accent1-color: #264653;
@@ -7,6 +7,10 @@
     --heading-font: Georgia, "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
+
+/* =========================
+   GENERAL
+   ========================= */
 
 * {
     margin: 0;
@@ -35,17 +39,45 @@ h2 {
 p,
 section,
 article {
-    margin: 16px;
+    margin: 13px;
     padding: 8px;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+}
+
+header img {
+    max-width: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    color: var(--primary-color);
 }
 
 .socialmedia a {
     text-decoration: none;
 }
 
-nav a {
-    color: var(--primary-color);
-}
+/* =========================
+   HERO
+   ========================= */
 
 .hero {
     position: relative;
@@ -84,6 +116,10 @@ nav a {
     margin-left: 16px;
 }
 
+/* =========================
+   SOCIAL MEDIA
+   ========================= */
+
 .socialmedia {
     display: flex;
     justify-content: flex-end;
@@ -95,25 +131,9 @@ nav a {
     height: 30px;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    align-items: center;
-}
-
-header nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-}
-
-section {
-    text-align: center;
-}
-
-nav {
-    background-color: var(--secondary-color);
-}
+/* =========================
+   FOOTER
+   ========================= */
 
 footer {
     display: flex;
@@ -121,6 +141,14 @@ footer {
     align-items: center;
     background-color: var(--accent2-color);
 }
+
+footer p {
+    color: #000000;
+}
+
+/* =========================
+   HISTORY
+   ========================= */
 
 .history {
     display: grid;
@@ -148,6 +176,10 @@ footer {
     object-fit: cover;
 }
 
+/* =========================
+   ADVENTURES
+   ========================= */
+
 .adventures {
     text-align: center;
 }
@@ -173,6 +205,154 @@ footer {
     font-weight: bold;
 }
 
-footer p {
-    color: #000000;
+/* =========================
+   CONTACT INFORMATION
+   ========================= */
+
+.contact-information {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.contact-information h2 {
+    margin-bottom: 10px;
+}
+
+.contact-information p {
+    margin: 5px;
+    padding: 0;
+}
+
+/* =========================
+   CONTACT MAIN
+   MAP LEFT / FORM RIGHT
+   ========================= */
+
+.contact-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+    width: 100%;
+    margin: 20px auto;
+}
+
+/* =========================
+   GOOGLE MAP
+   ========================= */
+
+.contact-map {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-map h2 {
+    margin: 0 0 15px 0;
+}
+
+.contact-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    border: 0;
+}
+
+/* =========================
+   CONTACT FORM
+   ========================= */
+
+.contact-form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.contact-form label {
+    display: block;
+    text-align: left;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form p {
+    margin: 5px 0;
+    padding: 0;
+    text-align: left;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    opacity: 0.9;
+}
+
+/* =========================
+   EMPLOYEES
+   ========================= */
+
+.employees {
+    text-align: center;
+}
+
+.employees h2 {
+    margin-bottom: 20px;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.employee-gallery figure {
+    flex: 1;
+    margin: 0;
+}
+
+.employee-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.employee-gallery figcaption {
+    margin-top: 8px;
+    font-weight: bold;
 }

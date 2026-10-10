@@ -67,55 +67,60 @@ html
             <!-- Contact Form -->
             <div class="contact-form">
 
-                <h2>Send Us a Message</h2>
+                <form class="contact-form">
+                    <h2>Send Us a Message</h2>
 
-                <form>
+                    <div class="form-row">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
 
-                    <label for="name">Name:</label>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email"
+                          required>
+                    </div>
 
-                    <input type="text" id="name" name="name" required>
+                    <div class="form-row purpose-row">
+                        <div class="purpose-title">
+                            <span>Message</span>
+                            <span>Purpose</span>
+                        </div>
 
+                        <div class="purpose-options">
+                            <label>
+                                <input type="radio" name="purpose" value="general" required>
+                                General Inquiry
+                            </label>
 
-                    <label for="email">Email:</label>
+                            <label>
+                                <input type="radio" name="purpose" value="reservation">
+                                Reservation Question
+                            </label>
 
-                    <input type="email" id="email" name="email" required>
+                            <label>
+                                <input type="radio" name="purpose" value="suggestion">
+                                Website Suggestion
+                            </label>
+                        </div>
+                    </div>
 
+                    <div class="message-field">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6"
+                          placeholder="Write your message here..." required></textarea>
+                    </div>
 
-                    <p>What is the purpose of your message?</p>
+                    <div class="newsletter">
+                        <label>
+                            <input type="checkbox" name="newsletter">
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
 
-
-                    <label>
-                        <input type="radio" name="purpose" value="general">
-                        General Inquiry
-                    </label>
-
-
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
-
-
-                    <label>
-                        <input type="radio" name="purpose" value="suggestion">
-                        Website Suggestion
-                    </label>
-
-
-                    <label for="message">Message:</label>
-
-                    <textarea id="message" name="message" rows="6" required></textarea>
-
-
-                    <label>
-                        <input type="checkbox" name="newsletter">
-                        Please subscribe me to the monthly newsletter
-                    </label>
-
-
-                    <button type="submit">Send Message</button>
-
+                    <button type="submit">Get in Touch</button>
                 </form>
+
 
             </div>
 

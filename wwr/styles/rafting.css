@@ -356,3 +356,99 @@ footer p {
     margin-top: 8px;
     font-weight: bold;
 }
+
+/* Contact form layout */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    align-items: start;
+    gap: 15px;
+}
+
+.form-row > label {
+    padding-top: 10px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.purpose-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.purpose-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.purpose-options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.message-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    resize: vertical;
+    font: inherit;
+}
+
+.newsletter label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    background-color: #1b4965;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #264653;
+}
+
+/* Adapt the form to small screens */
+@media screen and (max-width: 500px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .form-row > label {
+        padding-top: 0;
+    }
+}
